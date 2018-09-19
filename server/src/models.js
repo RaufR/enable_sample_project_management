@@ -5,7 +5,7 @@ const ObjectId = Schema.Types.ObjectId
 
 
 function buildModel(name, schema) {
-    return mongoose.model(name, new Schema(schema,{timestamp: true}))
+    return mongoose.model(name, new Schema(schema,{timestamps: true}))
 }
 
 const Folder = buildModel('Folder', {
